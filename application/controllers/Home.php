@@ -12,11 +12,12 @@ class Home extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('datasource');
-$this->load->helper('security');
+		$this->load->helper('security');
 	}
 
 	 
 	public function index(){ 
+
 		$this->load->view('home');
 	}
 
@@ -40,7 +41,7 @@ $this->load->helper('security');
 	}
 
 	/**
-     * This function is used to save the ingredients in the database  when add to list is clicked
+     * This function is e the ingredients in the database  when add to list is clicked
     */
 	public function save(){
 
