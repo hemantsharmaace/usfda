@@ -60,7 +60,6 @@ class Home extends CI_Controller {
 		 		 $ingredientsData['unique_identifier'] = $value['ndbno'];
 		 		 $ingredientsData['manufacturer'] = $value['manu'];
 
-		 		 //call api to find the total calories in the added basket
 		 		 $param = array(); 
 		 		 if(isset($value['ndbno']) && $value['ndbno'] !=""){
 					 $param = array('ndbno'=>$value['ndbno']);
